@@ -11,16 +11,17 @@
 }
 
 .title {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  margin-top: 50px;
-  top: 0;
-  left: 0;
-  color: rgb(68 235 164);
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 70px;
-  text-shadow: 0px 0px 20px rgb(0 0 0);
+  position: absolute; /* Permite que el texto esté posicionado en relación al body */
+  width: 100%; /* Asegura que el contenedor de texto ocupe el ancho completo */
+  text-align: center; /* Centra el texto dentro del contenedor */
+  margin-top: -200px; /* Ajusta el margen superior según sea necesario */
+  top: 0; /* Posiciona el texto en la parte superior */
+  left: 50%; /* Coloca el borde izquierdo en el centro del contenedor */
+  transform: translateX(50%); /* Ajusta la posición para centrar el texto */
+  color: rgb(68, 235, 164); /* Color del texto */
+  font-family: 'Courier New', Courier, monospace; /* Fuente del texto */
+  font-size: 30px; /* Tamaño de la fuente */
+  text-shadow: 0px 0px 20px rgb(0, 0, 0); /* Sombra del texto */
 }
 
 body {
@@ -1649,4 +1650,6 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
 
