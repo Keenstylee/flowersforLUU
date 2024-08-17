@@ -19,10 +19,23 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 100; /* Asegura que el reproductor esté encima de otros elementos */
+      text-align: center; /* Para centrar el contenido dentro del contenedor */
     }
 
     audio {
       width: 300px;
+    }
+
+    .whatsapp-link {
+      margin-top: 10px;
+      display: inline-block;
+      text-decoration: none;
+      font-size: 16px;
+      color: #25D366; /* Color verde de WhatsApp */
+    }
+
+    .whatsapp-link:hover {
+      color: #128C7E; /* Un color verde más oscuro cuando se pasa el mouse */
     }
   </style>
 </head>
@@ -31,12 +44,14 @@
   <!-- Background -->
   <div class="night"></div>
 
-  <!-- Reproductor de audio -->
+  <!-- Reproductor de audio y enlace a WhatsApp -->
   <div class="audio-player">
     <audio controls>
       <source src="https://github.com/Keenstylee/floresdekeen2.github.io/raw/main/ssstik.io_1719872990724.mp3" type="audio/mpeg">
       Tu navegador no soporta el elemento de audio.
     </audio>
+    <!-- Enlace a WhatsApp -->
+    <a href="https://wa.me/51968424445" class="whatsapp-link" target="_blank">Contáctame por WhatsApp</a>
   </div>
   <!-- Flower -->
   <div class="flowers">
