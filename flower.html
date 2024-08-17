@@ -10,17 +10,35 @@
 
   <!-- Document Title -->
   <title>FLOWERS</title>
+
+  <style>
+    /* Estilos para centrar el reproductor de audio */
+    .audio-player-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Altura completa de la pantalla */
+    }
+
+    audio {
+      width: 300px;
+    }
+  </style>
 </head>
 
 <body class="not-loaded">
   <!-- Background -->
   <div class="night"></div>
-<div class="audio-player">
-    <audio controls>
+
+  <!-- Contenedor del reproductor de audio -->
+  <div class="audio-player-container">
+    <div class="audio-player">
+      <audio controls>
         <source src="https://github.com/Keenstylee/floresdekeen2.github.io/raw/main/ssstik.io_1719872990724.mp3" type="audio/mpeg">
         Tu navegador no soporta el elemento de audio.
-    </audio>
-</div>
+      </audio>
+    </div>
+  </div>
   <!-- Flower -->
   <div class="flowers">
     <div class="flower flower--1">
