@@ -12,12 +12,13 @@
   <title>FLOWERS</title>
 
   <style>
-    /* Estilos para centrar el reproductor de audio */
-    .audio-player-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh; /* Altura completa de la pantalla */
+    /* Estilos para centrar el reproductor de audio sin afectar otros elementos */
+    .audio-player {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 100; /* Asegura que el reproductor esté encima de otros elementos */
     }
 
     audio {
@@ -30,14 +31,12 @@
   <!-- Background -->
   <div class="night"></div>
 
-  <!-- Contenedor del reproductor de audio -->
-  <div class="audio-player-container">
-    <div class="audio-player">
-      <audio controls>
-        <source src="https://github.com/Keenstylee/floresdekeen2.github.io/raw/main/ssstik.io_1719872990724.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-      </audio>
-    </div>
+  <!-- Reproductor de audio -->
+  <div class="audio-player">
+    <audio controls>
+      <source src="https://github.com/Keenstylee/floresdekeen2.github.io/raw/main/ssstik.io_1719872990724.mp3" type="audio/mpeg">
+      Tu navegador no soporta el elemento de audio.
+    </audio>
   </div>
   <!-- Flower -->
   <div class="flowers">
